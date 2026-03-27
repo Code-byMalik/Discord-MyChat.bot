@@ -105,7 +105,7 @@ async def main_cmd(ctx):
     await ctx.send(f"✅ Embed in {channel.mention} gesendet!", delete_after=3)
 
 
-@bot.command(name="clear_now")
+@bot.command(name="now")
 @commands.has_permissions(administrator=True)
 async def clear_now(ctx):
     await ctx.message.delete()
